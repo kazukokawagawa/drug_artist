@@ -42,31 +42,19 @@ const sidebarOptions = [
     scanStartPath: 'zh-cn',
     resolvePath: '/zh-cn/',
     sortMenusByFrontmatterOrder: true,
-  },
-  {
-    ...baseConfig,
-    scanStartPath: 'en',       // 扫描 docs/en 下的 md
-    resolvePath: '/en/',       // 映射到 /en/ 下
-    sortMenusByFrontmatterOrder: true,
-  },
-  {
-    ...baseConfig,
-    scanStartPath: 'zh-tw',       // 扫描 docs/en 下的 md
-    resolvePath: '/zh-tw/',       // 映射到 /en/ 下
-    sortMenusByFrontmatterOrder: true,
   }
 ]
 
 const themeConfig: ThemeContext = {
-  siteTitle: 'MtF.Report',
-  siteDescription: '让世界看见她们',
+  siteTitle: 'Drug_artist',
+  siteDescription: '副标题',
   // baseUrl: '/',
   /** Repo */
   githubRepoLink: 'https://github.com/mtfreport/vitepress-theme-project-trans',
   /** vitepress 根目录 */
   rootDir: 'docs',
   /** 文档所在目录（目前似未使用此项） */
-  include: ['zh-cn', 'en'],
+  include: ['zh-cn'],
   nav,
   sidebarOptions,
   // enableChangeLog: false,
@@ -78,7 +66,7 @@ const themeConfig: ThemeContext = {
   disclaimerPaths: [
     {
       path: '/zh-cn/',
-      summaryHtml: 'MtF.Report 中的内容，仅供参考。可能存在过时或不准确的信息，请谨慎甄别。',
+      summaryHtml: 'Drug_artist 中的内容，仅供参考。可能存在过时或不准确的信息，请谨慎甄别。',
 //      detailHtml: '<p>RLE.wiki「大学指南」中的内容，仅供参考。可能存在过时或不准确的信息，请谨慎甄别。</p>'
 //        + '<p>「大学指南」板块中的内容，多数来自于读者投稿，并经编辑简单整理和形式审查后登载，主要体现其投稿者主观观点。不代表 RLE.wiki 编辑团队及我们的任何相关维护人员立场。</p>'
 //        + '<p>若存在任何有误或不当内容，请联系 <a href="mailto:rlewiki@project-trans.org">rlewiki@project-trans.org</a>。</p>',
@@ -93,19 +81,7 @@ const themeConfig: ThemeContext = {
       label: '中文',
       lang: 'zh',
       link: '/zh-cn/',
-    },
-    tw: {
-      label: '繁體中文',
-      lang: 'tw',
-      link: '/zh-tw/',
-    },
-    en: {
-      label: 'English',
-      lang: 'en', // 可选，将作为 `lang` 属性添加到 `html` 标签中
-      link: '/en/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
-
-      // 其余 locale 特定属性...
-    },
+    }
   },
   // 添加自定义 head 元素
   // additionalHead: [
@@ -121,7 +97,7 @@ export default withThemeContext(themeConfig, () => {
     ...genConfig(),
     outDir: '../dist',
     sitemap: {
-    hostname: 'https://mtf.report',
+//    hostname: 'https://mtf.report',
     lastmodDateOnly: true
   }
   }
