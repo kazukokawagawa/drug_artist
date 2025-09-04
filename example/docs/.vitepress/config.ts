@@ -50,7 +50,7 @@ const themeConfig: ThemeContext = {
   siteDescription: '副标题',
   // baseUrl: '/',
   /** Repo */
-  githubRepoLink: 'https://github.com/mtfreport/vitepress-theme-project-trans',
+  githubRepoLink: 'https://github.com/kazukokawagawa/drug_artist',
   /** vitepress 根目录 */
   rootDir: 'docs',
   /** 文档所在目录（目前似未使用此项） */
@@ -61,7 +61,7 @@ const themeConfig: ThemeContext = {
   enableSuggestionBox: false,
   HideReadingTime: true, /* 隐藏字数和预计阅读时间 */
   HideLastUpdated: true, /* 隐藏最后更新时间 */
-  //HideAuthors: true, /* 隐藏作者信息 */
+  HideAuthors: true, /* 隐藏作者信息 */
   // fontsBaseUrl: 'http://localhost:8788', // For local development with wrangler pages dev
   disclaimerPaths: [
     {
