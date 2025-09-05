@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 白兔Bron（OD药物科普）
 index: true
@@ -86,4 +85,3 @@ category:
 - 退效时：【缺少数据】
 - 残效时：24h
 - 总效时：3h~6h
-```
