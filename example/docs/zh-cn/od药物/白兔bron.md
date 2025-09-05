@@ -1,5 +1,5 @@
 ---
-title: 白兔Bron（OD药物科普）
+title: 白兔Bron
 index: true
 icon: warning
 author: 药物百科
