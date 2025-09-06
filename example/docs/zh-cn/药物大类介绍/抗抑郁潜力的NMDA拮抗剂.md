@@ -1,4 +1,4 @@
-```markdown
+
 ---
 title: 抗抑郁潜力的NMDA拮抗剂（药物大类介绍）
 index: true
